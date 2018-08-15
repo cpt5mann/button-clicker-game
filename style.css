@@ -1,0 +1,88 @@
+
+body{
+background-color:rgb(12, 300, 2);
+text-align:center;
+
+
+}
+div{
+    font-family: 'Russo One', sans-serif;
+    
+}
+@keyframes pulse {
+    0%, 100% {
+      color: rgb(12, 300, 2);
+    }
+    50% {
+      color: black;
+    }
+  }
+
+
+@keyframes text1 {
+    0%, 100%{
+        color:rgb(12, 300, 2);
+    }
+    50%{
+        color:red;
+    }
+}
+    @keyframes text2 {
+        0%, 100%{
+            color:rgb(12, 300, 2);
+        }
+        50%{
+            color:blue;
+        }
+    }
+
+  
+    
+
+.ph{
+animation-name:text;
+animation-duration: 1.5s; 
+     animation-iteration-count: infinite;
+
+}
+#scores{
+font-size:75px;
+display:flex;
+
+    
+justify-content: center;
+}
+#P1Score{
+color:blue;
+margin-right:10px;
+animation-name: text2;
+animation-duration: 1.5s; 
+ animation-iteration-count: infinite;
+}
+#P2Score{
+color:red;
+margin-left:10px;
+animation-name: text1;
+animation-duration: 1.5s; 
+ animation-iteration-count: infinite;
+}
+#buttoncontainer{
+display:flex;
+justify-content:center;
+margin-top:50px;
+}
+h1{
+    color:black;
+    font-size:60px; 
+    animation-name: pulse;
+    animation-duration: 1.5s; 
+     animation-iteration-count: infinite;
+}
+#title{
+display:flex;
+justify-content:center;
+}
+
+
+
+
