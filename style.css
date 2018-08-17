@@ -1,6 +1,6 @@
 
 body{
-background-color:rgb(12, 300, 2);
+background-color:gray;
 text-align:center;
 
 
@@ -11,17 +11,17 @@ div{
 }
 @keyframes pulse {
     0%, 100% {
-      color: rgb(12, 300, 2);
+      color: black;
     }
     50% {
-      color: black;
+      color: gray;
     }
   }
 
 
 @keyframes text1 {
     0%, 100%{
-        color:rgb(12, 300, 2);
+        color:black;
     }
     50%{
         color:red;
@@ -29,14 +29,28 @@ div{
 }
     @keyframes text2 {
         0%, 100%{
-            color:rgb(12, 300, 2);
+            color:black;
         }
         50%{
             color:blue;
         }
     }
-
-  
+    @keyframes text3 {
+        0%, 100%{
+            color:black;
+        }
+        50%{
+            color:yellow;
+        }
+    }
+    @keyframes text4 {
+        0%, 100%{
+            color:black;
+        }
+        50%{
+            color:green;
+        }
+    }
     
 
 .ph{
@@ -47,9 +61,7 @@ animation-duration: 1.5s;
 }
 #scores{
 font-size:75px;
-display:flex;
-
-    
+display:flex;   
 justify-content: center;
 }
 #P1Score{
@@ -66,6 +78,23 @@ animation-name: text1;
 animation-duration: 1.5s; 
  animation-iteration-count: infinite;
 }
+#P3Score{
+    color:yellow;
+    margin-left:10px;
+    animation-name: text3;
+    animation-duration: 1.5s; 
+     animation-iteration-count: infinite;
+    }
+    #P4Score{
+        color: green;
+        margin-left:10px;
+        animation-name: text4;
+        animation-duration: 1.5s; 
+         animation-iteration-count: infinite;
+        }
+
+
+
 #buttoncontainer{
 display:flex;
 justify-content:center;

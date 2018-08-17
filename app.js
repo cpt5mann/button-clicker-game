@@ -1,5 +1,7 @@
 var plone=document.getElementById("P1Score");
 var pltwo=document.getElementById("P2Score");
+var plthree=document.getElementById("P3Score");
+var plfour=document.getElementById("P4Score");
 var onebutton=document.getElementById("button1");
 var twobutton=document.getElementById("button2");
 var plonevar=0;
@@ -30,11 +32,45 @@ document.addEventListener("keypress", function(event){
  }
     
     if(pltwovar===100){
-        alert("Player Two Wins! Congratulations! (If you see more notifications, ignore them.)")                                                                                                                                                                                                                                                                                                                                                                                                  
+        alert("Player Two Wins! Congratulations!")                                                                                                                                                                                                                                                                                                                                                                                                  
         
         }
 
     });
+
+    var plthreevar=0;
+    document.addEventListener("keypress", function(event){
+     var lessee=event.keyCode;
+     if(lessee===109){
+        plthreevar++;
+        plthree.innerHTML=plthreevar;
+    
+     }
+        
+        if(plthreevar===100){
+            alert("Player Three Wins! Congratulations! ")                                                                                                                                                                                                                                                                                                                                                                                                  
+            
+            }
+    
+        });
+
+        var plfourvar=0;
+        document.addEventListener("keypress", function(event){
+         var lessee=event.keyCode;
+         
+         if(lessee===122){
+            plfourvar++;
+            plfour.innerHTML=plfourvar;
+       
+         }
+            
+            if(plfourvar===100){
+                alert("Player Four Wins! Congratulations!")                                                                                                                                                                                                                                                                                                                                                                                                  
+                
+                }
+        
+            });
+
 
 
 
